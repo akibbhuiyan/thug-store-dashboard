@@ -1,7 +1,20 @@
 import React from "react";
-
-const Pie = () => {
-  return <div>Pie</div>;
+import { Header, Pie as PieChart } from "../../components";
+import { pieChartData } from "../../data/dummy";
+const Line = () => {
+  return (
+    <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl">
+      <Header category="Line" title="Inflation Rate" />
+      <div className="w-full">
+        <PieChart
+          id="pie-chart"
+          data={pieChartData}
+          legendVisiblity
+          height="full"
+        />
+      </div>
+    </div>
+  );
 };
 
-export default Pie;
+export default Line;
