@@ -70,14 +70,14 @@ const NavBar = () => {
           title="Chat"
           customFunc={() => handleClick("chat")}
           color={currentColor}
-          dotColor="green"
+          dotColor="#03C9D7"
           icon={<BsChatLeft />}
         />
         <NavButton
           title="Notifications"
           customFunc={() => handleClick("notification")}
           color={currentColor}
-          dotColor="green"
+          dotColor="rgb(254, 201, 15)"
           icon={<RiNotification3Line />}
         />
         <TooltipComponent content="Profile" position="BottomCenter">
